@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-
+import Signup from '../Signup/Signup.js';
 import './Join.css';
 
 export const Join = () => {
@@ -23,6 +23,9 @@ export const Join = () => {
         <Link onClick={e => (!name || !room) ? e.preventDefault() : null} to={`/chat?name=${name}&room=${room}`}>
           <button className={'button mt-20'} type="submit">Sign In</button>
         </Link>
+        
+          <button className={'button mt-20'} >Sign Up</button>
+        
       </div>
     </div>
   );
